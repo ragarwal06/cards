@@ -51,6 +51,7 @@ h1{
   box-shadow:-3px 5px 15px #000;
   cursor: pointer;
   -webkit-transition: all 0.2s;
+  border-radius: 20px;
   transition: all 0.2s;
 }
 .modal-img,.model-vid{

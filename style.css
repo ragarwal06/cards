@@ -47,6 +47,7 @@ h1{
   width:100%;
   height:auto;
   margin: 4% auto;
+  padding: 5px;
   box-shadow:-3px 5px 15px #000;
   cursor: pointer;
   -webkit-transition: all 0.2s;

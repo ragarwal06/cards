@@ -1,0 +1,45 @@
+.bg{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-image: url("./exports/Designs-01.jpg");
+    filter: blur(10px);
+      -webkit-filter: blur(10px);
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.container {
+  padding-top: 20px;
+}
+img{
+    margin: 0 auto;
+    border-radius:20px;
+}
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+   color: #000000;
+}
+.carousel-indicators .active{
+    background-color: #f00;
+    opacity:0.5;
+}
+.carousel-indicators li{
+    background-color: #000000;
+    opacity:0.3;
+}
+.tales {
+  width: 100%;
+}
+.carousel-inner{
+  width:100%;
+  max-height: 95vh !important;
+}

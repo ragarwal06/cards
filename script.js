@@ -1,26 +1,14 @@
-if (Modernizr.touch) {
-  $(".carousel").swipe({
-    swipe: function(
-      event,
-      direction,
-      distance,
-      duration,
-      fingerCount,
-      fingerData
-    ) {
-      if (direction == "left") $(this).carousel("next");
-      if (direction == "right") $(this).carousel("prev");
-    },
-    allowPageScroll: "vertical"
-  });
-}
-
-$('.carousel').on('slid.bs.carousel', function () {
-
-    var carouselData = $(this).data('bs.carousel');
-    var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
-    currentIndex+=1;
-    if(currentIndex < 10) currentIndex = "0"+""+currentIndex;
-    var image = "./exports/Designs-"+currentIndex+".jpg";
-    console.log(image);
+$(document).ready(function(){
+  $("img").click(function(){
+  var t = $(this).attr("src");
+  $(".modal-body").html("<img src='"+t+"' class='modal-img'>");
+  $("#myModal").modal();
 });
+
+$("video").click(function(){
+  var v = $("video > source");
+  var t = v.attr("src");
+  $(".modal-body").html("<video class='model-vid' controls><source src='"+t+"' type='video/mp4'></source></video>");
+  $("#myModal").modal();  
+});
+});//EOF Document.ready
